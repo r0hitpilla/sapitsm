@@ -4,6 +4,9 @@ import TableOne from './tableone';
 import Form from './form';
 import './styles.css';
 import BasicDateTimePicker from './datetime';
+import TimePickerValue from './daterange';
+import DateTimeRangeFieldValue from './datetime';
+
 
 
 const Scheduler = () => {
@@ -50,15 +53,17 @@ const Scheduler = () => {
     <div>
       
       <br />
-      
+      <h2>TableOne</h2>
 
       <TableOne handleRowClick={handleRowClick} />
       <br />
       
       <TableTwo handleRowClick={handleRowClick} />
       <br />
-    
-      <BasicDateTimePicker />
+
+      <h4>Scheduler</h4>
+
+      <DateTimeRangeFieldValue />
       
     </div>
   );
